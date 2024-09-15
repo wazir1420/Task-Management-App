@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tma/componant.dart/upper_header.dart';
+import 'package:tma/components/upper_header.dart';
 import 'package:tma/screens/privacySecurity.dart';
 
 class ChangePassword extends StatefulWidget {
