@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:tma/screens/ContactPage.dart';
+import 'package:tma/screens/HelpPage.dart';
 import 'package:tma/screens/HomePage.dart';
 import 'package:tma/screens/Settings.dart';
 
@@ -47,19 +49,31 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: 0.13,
               ),
-              Text(
-                'Contact Us',
-                style: TextStyle(
-                  fontSize: 25,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ContactUs()));
+                },
+                child: Text(
+                  'Contact Us',
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
                 ),
               ),
               SizedBox(
                 height: he * 0.03,
               ),
-              Text(
-                'Help',
-                style: TextStyle(
-                  fontSize: 25,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Helppage()));
+                },
+                child: Text(
+                  'Help',
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
                 ),
               ),
               SizedBox(

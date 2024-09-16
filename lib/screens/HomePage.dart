@@ -88,7 +88,7 @@ AppBar buildAppBar(BuildContext context) {
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: Image.asset('assets/back.jpg'),
+            child: Image.asset('assets/wazz.jpg'),
           ),
         ),
         SizedBox(
