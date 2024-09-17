@@ -8,6 +8,7 @@ class Task {
   Color? iconcolor;
   Color? btncolor;
   num? left;
+  List<Map<String, dynamic>>? desc;
   num? done;
   bool isLast;
 
@@ -18,6 +19,7 @@ class Task {
       this.iconcolor,
       this.btncolor,
       this.left,
+      this.desc,
       this.done,
       this.isLast = false});
 
@@ -31,6 +33,43 @@ class Task {
           iconcolor: kBlueDark,
           btncolor: kBlue,
           left: 5,
+          desc: [
+            {
+              'time': '9:00 AM',
+              'title': 'Create a Video',
+              'slot': '9:00 AM - 10:00 AM',
+              'tlcolor': kRedDark,
+              'bgcolor': kRedDark
+            },
+            {
+              'time': '10:00 AM',
+              'title': 'Watching a Movie',
+              'slot': '10:00 AM - 11:00 AM',
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
+            },
+            {
+              'time': '11:00 AM',
+              'title': '',
+              'slot': '',
+              'tlcolor': kYellowDark,
+              'bgcolor': kYellowLight
+            },
+            {
+              'time': '12:00 PM',
+              'title': 'Go to the Gym',
+              'slot': '12:00 PM - 1:00 PM',
+              'tlcolor': kRedDark,
+              'bgcolor': kRedLight
+            },
+            {
+              'time': '1:00 PM',
+              'title': 'Call with Client',
+              'slot': '1:00 PM - 2:00 PM',
+              'tlcolor': Colors.grey.withOpacity(0.3),
+              'bgcolor': kYellowLight
+            },
+          ],
           done: 3,
           isLast: false),
       Task(
@@ -40,6 +79,15 @@ class Task {
           iconcolor: kYellowDark,
           btncolor: kYellow,
           left: 1,
+          desc: [
+            {
+              'time': '1:00 PM',
+              'title': 'My Office Work',
+              'slot': '1:00 PM - 3:00 PM',
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
+            },
+          ],
           done: 4,
           isLast: false),
       Task(
