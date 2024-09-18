@@ -59,12 +59,18 @@ class DetailPage extends StatelessWidget {
       expandedHeight: 90,
       leading: IconButton(
         onPressed: () => Navigator.pop(context),
-        icon: const Icon(Icons.arrow_back_ios),
+        icon: const Icon(
+          Icons.arrow_back_ios,
+          color: Colors.grey,
+        ),
         iconSize: 20,
       ),
       actions: [
         IconButton(
-          icon: const Icon(Icons.more_vert),
+          icon: const Icon(
+            Icons.more_vert,
+            color: Colors.grey,
+          ),
           onPressed: () {},
           iconSize: 20,
         ),

@@ -38,15 +38,15 @@ class Task {
               'time': '9:00 AM',
               'title': 'Create a Video',
               'slot': '9:00 AM - 10:00 AM',
-              'tlcolor': kRedDark,
-              'bgcolor': kRedDark
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
             },
             {
               'time': '10:00 AM',
               'title': 'Watching a Movie',
               'slot': '10:00 AM - 11:00 AM',
-              'tlcolor': kBlueDark,
-              'bgcolor': kBlueLight
+              'tlcolor': kRedDark,
+              'bgcolor': kRedLight
             },
             {
               'time': '11:00 AM',
@@ -84,6 +84,27 @@ class Task {
               'time': '1:00 PM',
               'title': 'My Office Work',
               'slot': '1:00 PM - 3:00 PM',
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
+            },
+            {
+              'time': '',
+              'title': '',
+              'slot': '',
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
+            },
+            {
+              'time': '',
+              'title': 'Tea with Friends',
+              'slot': '',
+              'tlcolor': kBlueDark,
+              'bgcolor': kBlueLight
+            },
+            {
+              'time': '',
+              'title': '',
+              'slot': '',
               'tlcolor': kBlueDark,
               'bgcolor': kBlueLight
             },

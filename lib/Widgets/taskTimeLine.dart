@@ -36,11 +36,12 @@ class Tasktimeline extends StatelessWidget {
 
   Widget _buildCard(Color bgcolor, String title, String slot) {
     return Container(
-      width: 200,
+      width: 180,
       height: 100,
       decoration: BoxDecoration(
           color: bgcolor,
           borderRadius: const BorderRadius.only(
+            topRight: Radius.circular(10),
             topLeft: Radius.circular(10),
             bottomRight: Radius.circular(10),
             bottomLeft: Radius.circular(10),
@@ -49,7 +50,7 @@ class Tasktimeline extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 5, top: 20),
+            padding: EdgeInsets.only(left: 2, top: 10),
             child: Text(
               title,
               style: const TextStyle(
@@ -72,8 +73,8 @@ class Tasktimeline extends StatelessWidget {
 
   Widget _buildTimeLine(Color color) {
     return Container(
-      height: 20,
-      width: 115,
+      height: 120,
+      width: 80,
       child: TimelineTile(
         alignment: TimelineAlign.manual,
         lineXY: 0,
